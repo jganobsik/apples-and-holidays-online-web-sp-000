@@ -70,7 +70,7 @@ def all_supplies_in_holidays(holiday_hash)
     season_hash.each do |holiday, items_hash|
       holiday_string = holiday.to_s
       if holiday_string.match(/_/) 
-        holiday_array = holiday.split('_')
+        holiday_array = holiday_string.split('_')
         holiday_array.each do |item|
           item.capitalize!
         end
