@@ -77,9 +77,10 @@ def all_supplies_in_holidays(holiday_hash)
         full_holiday = holiday_array.join(", ")
         items_store = items_hash.join(", ")
       puts "  #{full_holiday}: #{items_store}"
-      end
+    else
+      
       items_store = items_hash.join(", ")
-      puts "  #{holiday.capitalize!}: #{items_store}"
+      puts "  #{holiday.to_s.capitalize!}: #{items_store}"
     end
   end
 
