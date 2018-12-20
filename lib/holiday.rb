@@ -54,7 +54,7 @@ supply_array = []
  christmas_store = holiday_hash[:winter][:christmas]
 supply_array << new_years_store.flatten
 supply_array << christmas_store.flatten
-return supply_array
+return supply_array.flatten
 end
 
 def all_supplies_in_holidays(holiday_hash)
